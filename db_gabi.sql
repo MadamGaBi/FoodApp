@@ -26,7 +26,7 @@ CREATE TABLE `food` (
   `id_food` int(11) NOT NULL AUTO_INCREMENT,
   `title` varchar(128) NOT NULL,
   PRIMARY KEY (`id_food`)
-) ENGINE=InnoDB AUTO_INCREMENT=22 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=30 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -35,7 +35,7 @@ CREATE TABLE `food` (
 
 LOCK TABLES `food` WRITE;
 /*!40000 ALTER TABLE `food` DISABLE KEYS */;
-INSERT INTO `food` VALUES (8,'Carrots'),(9,'Cucumbers'),(10,'Broccoli'),(11,'Potatoes'),(19,'Cabbage'),(20,'Eggplants'),(21,'Mushrooms');
+INSERT INTO `food` VALUES (8,'Carrots'),(9,'Cucumbers'),(10,'Broccoli'),(11,'Potatoes'),(19,'Cabbage'),(21,'Mushrooms'),(22,'Beets'),(29,'Tomatoes');
 /*!40000 ALTER TABLE `food` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -51,7 +51,7 @@ CREATE TABLE `place` (
   `title` varchar(128) NOT NULL,
   `geo` varchar(128) NOT NULL,
   PRIMARY KEY (`id_place`)
-) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -60,7 +60,7 @@ CREATE TABLE `place` (
 
 LOCK TABLES `place` WRITE;
 /*!40000 ALTER TABLE `place` DISABLE KEYS */;
-INSERT INTO `place` VALUES (1,'Market Odesskyi','Teremky1'),(2,'Market Petrivka','Petrivka'),(3,'Market Nyvky','Nyvky');
+INSERT INTO `place` VALUES (1,'Market Odesskyi','Teremky1'),(2,'Market Petrivka','Petrivka'),(3,'Market Nyvky','Nyvky'),(4,'Market Stolychnyi','Teremky2');
 /*!40000 ALTER TABLE `place` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -89,7 +89,7 @@ CREATE TABLE `price` (
 
 LOCK TABLES `price` WRITE;
 /*!40000 ALTER TABLE `price` DISABLE KEYS */;
-INSERT INTO `price` VALUES (849,11,1,1),(599,19,1,1),(800,20,1,1),(3800,21,1,1);
+INSERT INTO `price` VALUES (1459,19,1,1),(2337,21,1,1),(1500,29,4,1),(2000,9,4,1);
 /*!40000 ALTER TABLE `price` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -102,4 +102,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2015-10-23 22:30:47
+-- Dump completed on 2015-10-28 22:09:10
